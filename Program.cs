@@ -8,9 +8,9 @@ namespace ToyCSharp {
             var lib = new ToyLib();
             lib.ToyFunction();
 
-            foreach (var arg in args)
+            for(var i = 0; i < args.Length; i++)
             {
-                Console.WriteLine($"arg: {arg}");
+                Console.WriteLine($"arg[{i}]: {args[i]}");
             }
         }
     }
